@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+
+    <!-- Libraries -->
+    <script>window.$ = window.jQuery = require('jquery');</script>
+
+    <!-- Scripts -->
+    <script src="scripts/main.js"></script>
+  </head>
+  <body>
+    <div id="input">Click to open chat file</div>
+    <div id="noChatFile" onclick="openDiscordHistoryTracker()">
+      If you don't have the chat file of a server. Use this application 
+      <a href="">https://dht.chylex.com/</a>
+    </div>
+    <div id="header">
+      <input class="input user" type="text" placeholder="User"/>
+      <input class="input channel" placeholder="Channel" type="text"/>
+      <button id="refresh">Refresh</button>
+    </div>
+    <div id="stats">
+      <div class="stat" id="msgPerUserPie">
+        <div class="title">Messages Per User</div>
+        <div class="index"><canvas></canvas></div>
+      </div>
+      <div class="stat" id="messageActivity">
+        <div class="title">Messages Activity</div>
+        <div class="index"><canvas></canvas></div>
+      </div>
+      <div class="stat" id="channelActivity">
+        <div class="title">Channel Activity</div>
+        <div class="index"><canvas></canvas></div>
+      </div>
+      <div class="stat" id="averageDayActivity">
+        <div class="title">Activity Troughout a day</div>
+        <div class="index"><canvas></canvas></div>
+      </div>
+    </div>
+  </body>
+</html>
