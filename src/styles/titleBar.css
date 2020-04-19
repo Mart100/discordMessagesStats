@@ -1,0 +1,40 @@
+#titleBar {
+  width: 100%;
+  position: sticky;
+  top: 0px;
+  height: 24px;
+  background-color: rgb(15, 15, 15);
+  -webkit-app-region: drag;
+}
+
+#titleBar .button {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  padding: 4px 10px;
+  left: 0px;
+  float: right;
+  -webkit-app-region: no-drag;
+}
+#titleBar .logo {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+}
+#titleBar .name {
+  display: inline-block;
+  color: white;
+  margin-left: 26px;
+  font-size: 16px;
+  padding: 4px;
+  user-select: none;
+}
+#titleBarMinimize:hover {
+  background-color: rgb(25, 25, 25);
+}
+#titleBarResize:hover {
+  background-color: rgb(25, 25, 25);
+}
+#titleBarClose:hover {
+  background-color: rgb(128, 0, 0);
+}

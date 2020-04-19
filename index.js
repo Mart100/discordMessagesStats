@@ -10,7 +10,8 @@ app.on('ready', () => {
 
   // Create the browser window.
   let window = new BrowserWindow({
-    frame: true,
+    frame: false,
+    icon: './logo.png',
     webPreferences: {
       nodeIntegration: true,
       nodeIntegrationInWorker: true

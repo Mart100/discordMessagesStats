@@ -15,11 +15,13 @@ let filters = {
 }
 
 $(() => {
+  $("#header").hide()
 	$(document).on("keydown", (e) => {
 		if(e.keyCode === 123) remote.getCurrentWindow().toggleDevTools()
 		else if (e.keyCode === 116) location.reload()
   })
-  $('#refresh').on('click', () => {
+  $('#header .input').on('change', () => {
+    if($('#stats').css("display") == "hidden") return
     extractStats()
     viewStats()
   })
@@ -171,6 +173,7 @@ async function extractStats() {
 }
 
 function viewStats() {
+  $("#header").fadeIn()
   $('#stats').fadeIn()
 
   $('#stats .stat .index').html('<canvas></canvas>')
