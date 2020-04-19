@@ -1,4 +1,4 @@
 # discordMessagesStats
 
 ##Preview:
-<img src="https://i.imgur.com/FWoGJEg.png">
+<img src="https://i.imgur.com/o2WlFrH.png">
