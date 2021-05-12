@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "chart.js": "^2.8.0",
+    "chart.js": "^2.9.4",
     "electron": "^7.2.4",
     "electron-reload": "^1.5.0",
     "jquery": "^3.5.0",
